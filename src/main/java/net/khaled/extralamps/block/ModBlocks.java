@@ -3,6 +3,9 @@ package net.khaled.extralamps.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.khaled.extralamps.ExtraLamps;
+import net.khaled.extralamps.block.custom.BlueLampBlock;
+import net.khaled.extralamps.block.custom.RedLampBlock;
+import net.khaled.extralamps.item.ModItemGroup;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
@@ -14,7 +17,8 @@ import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
 
-    public static final Block BLUE_LAMP = registerBlock("blue_lamp", new Block(FabricBlockSettings.of(Material.REDSTONE_LAMP).luminance(15).strength(0.3f).sounds(BlockSoundGroup.GLASS)), ItemGroup.MISC);
+    public static final Block BLUE_LAMP = registerBlock("blue_lamp", new BlueLampBlock(FabricBlockSettings.of(Material.REDSTONE_LAMP).strength(0.3f).luminance(state -> state.get(BlueLampBlock.LIT) ? 15 : 0).sounds(BlockSoundGroup.GLASS)), ModItemGroup.LAMPS);
+    public static final Block RED_LAMP = registerBlock("red_lamp", new RedLampBlock(FabricBlockSettings.of(Material.REDSTONE_LAMP).strength(0.3f).luminance(state -> state.get(RedLampBlock.LIT) ? 15 : 0).sounds(BlockSoundGroup.GLASS)), ModItemGroup.LAMPS);
 
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
         registerBlockItem(name, block, tab);

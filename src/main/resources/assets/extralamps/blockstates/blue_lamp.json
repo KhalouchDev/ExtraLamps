@@ -1,5 +1,6 @@
 {
   "variants": {
-    "": {"model": "extralamps:block/blue_lamp"}
+    "lit=true": {"model": "extralamps:block/blue_lamp_on"},
+    "lit=false": {"model": "extralamps:block/blue_lamp_off"}
   }
 }
