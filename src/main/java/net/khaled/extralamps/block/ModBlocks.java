@@ -13,6 +13,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter;
 
 public class ModBlocks {
 
@@ -30,6 +31,7 @@ public class ModBlocks {
     public static final Block GRAY_LAMP = registerBlock("gray_lamp", new GrayLampBlock(FabricBlockSettings.of(Material.REDSTONE_LAMP).strength(0.3f).luminance(state -> state.get(GrayLampBlock.LIT) ? 15 : 0).sounds(BlockSoundGroup.GLASS)), ModItemGroup.LAMPS);
     public static final Block LIGHT_GRAY_LAMP = registerBlock("light_gray_lamp", new LightGrayLampBlock(FabricBlockSettings.of(Material.REDSTONE_LAMP).strength(0.3f).luminance(state -> state.get(LightGrayLampBlock.LIT) ? 15 : 0).sounds(BlockSoundGroup.GLASS)), ModItemGroup.LAMPS);
     public static final Block WHITE_LAMP = registerBlock("white_block", new WhiteLampBlock(FabricBlockSettings.of(Material.REDSTONE_LAMP).strength(0.3f).luminance(state -> state.get(WhiteLampBlock.LIT) ? 15 : 0).sounds(BlockSoundGroup.GLASS)), ModItemGroup.LAMPS);
+    public static final Block BLACK_LAMP = registerBlock("black_lamp", new BlackLampBlock(FabricBlockSettings.of(Material.REDSTONE_LAMP).strength(0.3f).luminance(state -> state.get(BlackLampBlock.LIT) ? 0 : -15).sounds(BlockSoundGroup.GLASS)), ModItemGroup.LAMPS);
 
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
         registerBlockItem(name, block, tab);
