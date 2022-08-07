@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#&#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:lime_stained_glass"
+    },
+    "&": {
+      "item": "minecraft:redstone_lamp"
+    }
+  },
+  "result": {
+    "item": "extralamps:lime_lamp"
+  }
+}
