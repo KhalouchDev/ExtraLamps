@@ -27,6 +27,7 @@ public class ModBlocks {
     public static final Block PINK_LAMP = registerBlock("pink_lamp", new PinkLampBlock(FabricBlockSettings.of(Material.REDSTONE_LAMP).strength(0.3f).luminance(state -> state.get(PinkLampBlock.LIT) ? 15 : 0).sounds(BlockSoundGroup.GLASS)), ModItemGroup.LAMPS);
     public static final Block LIGHT_BLUE_LAMP = registerBlock("light_blue_lamp", new LightBlueLampBlock(FabricBlockSettings.of(Material.REDSTONE_LAMP).strength(0.3f).luminance(state -> state.get(LightBlueLampBlock.LIT) ? 15 : 0).sounds(BlockSoundGroup.GLASS)), ModItemGroup.LAMPS);
     public static final Block BROWN_LAMP = registerBlock("brown_lamp", new LightBlueLampBlock(FabricBlockSettings.of(Material.REDSTONE_LAMP).strength(0.3f).luminance(state -> state.get(BrownLampBlock.LIT) ? 15 : 0).sounds(BlockSoundGroup.GLASS)), ModItemGroup.LAMPS);
+    public static final Block GRAY_LAMP = registerBlock("gray_lamp", new GrayLampBlock(FabricBlockSettings.of(Material.REDSTONE_LAMP).strength(0.3f).luminance(state -> state.get(GrayLampBlock.LIT) ? 15 : 0).sounds(BlockSoundGroup.GLASS)), ModItemGroup.LAMPS);
 
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
         registerBlockItem(name, block, tab);

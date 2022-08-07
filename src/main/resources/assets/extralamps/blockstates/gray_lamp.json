@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=true": {"model": "extralamps:block/gray_lamp_on"},
+    "lit=false": {"model": "extralamps:block/gray_lamp_off"}
+  }
+}
