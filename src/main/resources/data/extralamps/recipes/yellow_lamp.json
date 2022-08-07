@@ -7,13 +7,13 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:blue_stained_glass"
+      "item": "minecraft:yellow_stained_glass"
     },
     "&": {
       "item": "minecraft:redstone_lamp"
     }
   },
   "result": {
-    "item": "extralamps:blue_lamp"
+    "item": "extralamps:yellow_lamp"
   }
 }
