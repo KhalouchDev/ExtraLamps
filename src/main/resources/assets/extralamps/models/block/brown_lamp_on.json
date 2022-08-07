@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "extralamps:block/brown_lamp_on"
+  }
+}
