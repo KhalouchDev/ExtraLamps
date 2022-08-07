@@ -2,9 +2,11 @@ package net.khaled.extralamps.block.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 
 public class BlueLampBlock extends Block {
@@ -12,6 +14,7 @@ public class BlueLampBlock extends Block {
 
     public BlueLampBlock(Settings settings) {
         super(settings);
+        this.setDefaultState((BlockState)this.getDefaultState().with(LIT, false));
     }
 
     @Override
