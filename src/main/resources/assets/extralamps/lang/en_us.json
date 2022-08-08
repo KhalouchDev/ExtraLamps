@@ -14,5 +14,7 @@
   "block.extralamps.gray_lamp": "Gray Lamp",
   "block.extralamps.light_gray_lamp": "Light Gray Lamp",
   "block.extralamps.white_lamp": "White Lamp",
-  "block.extralamps.black_lamp": "Black Lamp"
+  "block.extralamps.black_lamp": "Black Lamp",
+
+  "itemGroup.extralamps.blue_lamp": "Lamps"
 }
