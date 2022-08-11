@@ -4,7 +4,7 @@
 # Extra Lamps - Minecaft mod
 Extra Lamps is a simple mod that adds colored redstone lamps to the game.
 
-Download [here]()
+Download [here](https://www.curseforge.com/minecraft/mc-mods/extra-lamps/files)
 
 # Licence
 <b>MIT</b>
