@@ -12,6 +12,7 @@ Download [here](https://www.curseforge.com/minecraft/mc-mods/extra-lamps/files)
 This project is licneced under the <b>MIT</b> licence. To see full terms click [here](https://github.com/KhalouchDev/ExtraLamps/blob/master/LICENCE).
 
 <b>Modpack Permission</b>
+
 Feel free to use this mod in your modpack
 #
 
